@@ -1,0 +1,27 @@
+{
+  "name": "auctionhouse",
+  "version": "1.0.0",
+  "description": "Auctionhouse API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://karthikkun@bitbucket.org/blockchainmphasisteam/auctionhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/blockchainmphasisteam/auctionhouse#readme",
+  "devDependencies": {
+    "asyncawait": "^1.0.7",
+    "bignumber.js": "^7.2.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "fs": "0.0.1-security",
+    "log4js": "^3.0.6",
+    "mongodb": "^2.2.19",
+    "web3": "^0.20.0"
+  }
+}

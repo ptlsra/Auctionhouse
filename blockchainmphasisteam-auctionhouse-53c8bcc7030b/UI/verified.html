@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Auction</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-light navbar-light bg-color-navheader">
+  <a class="navbar-brand" id="titlenav">Auction House</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto whitecolor">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="whitecolordatafour">Place Bid </a>
+      </li>
+     
+    </ul>
+  </div>
+    
+</nav>
+
+
+
+
+<br>
+<h2 style="text-align:center;font-weight:bolder;">Starry Nights by Van Gogh.</h2>
+<br>
+<br>
+
+<div>
+<figure class="snip1527" style="margin-left:8%;height:640px;">
+  <div class="image" ><img src="assets/img/starryNight.jpg" alt="pr-sample23" /></div>
+    
+    
+    
+  <figcaption>
+    <div class="date"><span class="day">24</span><span class="month">Oct</span></div>
+    <h4>Starry Night</h4>
+    <p> Artist :Vincent van Gogh
+    </p>
+    <p> Year : June 1889
+      </p>
+    <p> In Starry Night contoured forms are a means of expression and they are used to convey emotion. Many feel that van Gogh´s turbulent quest to overcome his illness is reflected in the dimness of the night sky. The village is painted with dark colors but the brightly lit windows create a sense of comfort. The village is peaceful in comparison to the dramatic night sky and the silence of the night can almost be felt in Starry Night. The steeple dominates the village and symbolizes unity in the town.
+    </p>
+      <p> Opening Bid : $1,000,000
+    </p>
+    <p> Estimate : $65,000 - $20,000,000
+      </p>
+
+      <p> Lot ID :126560 
+        </p>
+
+        <p> Dimensions : 74 cm x 92 cm
+          </p>
+
+          <p> Seller : Museum of Modern Art, New York
+            </p>
+            <p id="bid"> Number of Bids Placed :               </p>
+            <p> Details : 10 hours remaining till bid closes.
+              </p>
+
+              <p><button class="buttonCustom" id="placeBid"> Click Here to Place Bid.</button></p>
+              <p><button class="buttonCustom" id="done"> You have already placed Bid for this item.</button></p>
+
+
+          
+       
+  </figcaption>
+  
+</figure>
+
+
+
+</div>
+
+
+
+
+
+<footer id="footer" style="margin-top: 680px;">
+    
+  <div id="footer-container">
+      <p id="footer-content">Developed by BlockChain COE |Mphasis Ltd.</p>
+  </div>
+</footer>
+
+
+
+<div class="modal fade" id="bidModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Place Bid</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Enter following information to proceed.</p>
+          <br>
+          <table class="table">
+            <tr>
+              <td> UserName</td>
+              <td>  <input type="text" id="userName"></td>
+              </tr>
+
+
+              <tr>
+                  <td> Bidding Amount</td>
+                  <td> <input type="number" placeholder="Enter bidding amount" id="biddingAmount">
+                  
+                  </td>
+                  </tr>
+
+
+                  <tr>
+                     
+                      <td colspan="2"> 
+                          <input type="submit" value="Place Bid" class="loginbutton" id="placeBidConfirm">
+
+                      
+                      </td>
+                      </tr>
+          
+        
+          </table>
+         
+        </div>
+        
+        <!-- Modal footer -->
+      
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Transaction Status</h4>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+              <p > Transaction successfull with ID:</p>
+            <p id="txId"></p>
+          </div>
+          
+          <!-- Modal footer -->
+        
+          
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Properties.js"></script>
+	
+	<script src="assets/js/verified.js"></script>
+</body>
+
+</html>

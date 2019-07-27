@@ -1,0 +1,16 @@
+{
+  "name": "deploycontract",
+  "version": "1.0.0",
+  "description": "Nodejs program to deploy solidity contract to the ethereum blockchain",
+  "main": "deployContracrt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mphasis",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "log4js": "^3.0.5",
+    "web3": "^0.20.7"
+  }
+}

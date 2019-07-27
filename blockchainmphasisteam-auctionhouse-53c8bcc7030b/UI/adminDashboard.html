@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Auction</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.4.1-web/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
+    <link rel="stylesheet" href="assets/css/Customizable-Background--Overlay.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-light navbar-light bg-color-navheader">
+  <a class="navbar-brand" id="titlenav">Auction House</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto whitecolor">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" id="whitecolordatafour">Customer </a>
+      </li>
+
+      <li class="nav-item active">
+          <a class="nav-link" href="#" id="whitecolordatafour">Admin </a>
+        </li>
+     
+    </ul>
+  </div>
+    
+</nav>
+
+
+
+<div class="jumbotron jumbotron-fluid" id="bannerImage">
+  <div class="container">
+    <h1 class="display-4" style="font-weight:bolder">Auction House Portal</h1>
+    <p class="lead" style="font-weight:bolder">Welcome to the world's first blockchain enabled auction system.</p>
+  </div>
+</div>
+
+
+<br>
+<h2 style="text-align:center;font-weight:bolder;">Available Services.</h2>
+<br>
+<br>
+
+<div>
+    <div class="container">
+       
+        <div class="card-deck">
+          <div class="card" style="background-color:#aed2e8;">
+            <div class="card-body text-center">
+                <i class="fas fa-gavel fa-3x"></i>
+                <br>
+                <p class="card-text" style="margin-top:20px;"><a href="auctionDetails.html">Auction Details</a></p>
+            </div>
+          </div>
+
+
+          <div class="card" style="background-color:#aed2e8;">
+              <div class="card-body text-center">
+                  <i class="fas fa-upload fa-3x"></i>
+                  <br>
+                  <p class="card-text" style="margin-top:20px;">
+                      <button class="buttonCustom" id="deploy" style="color:#3366BB;"> Deploy Verfier Contract.</button>
+
+                  </p>
+              </div>
+            </div>
+         
+
+
+
+            <div class="card" style="background-color:#aed2e8;">
+                <div class="card-body text-center">
+                    <i class="fas fa-plus-circle fa-3x"></i>
+                    <br>
+                    <p class="card-text" style="margin-top:20px;">
+                        <button class="buttonCustom" id="registerItem" style="color:#3366BB;"> Register Auction Item.</button>
+  
+                    </p>
+                </div>
+              </div>
+           
+          
+          <div class="card" style="background-color:#aedde8;">
+            <div class="card-body text-center">
+
+                <i class="fas fa-history fa-3x"></i>
+                <br>
+              <p class="card-text" style="margin-top:20px;"><a href="allTx.html">All Transactions</a></p>
+            </div>
+          </div>  
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="modal fade" id="deployContract">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Deploy Verifier Contract</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+          <form id='data' action='' method='post' encType="multipart/form-data" style="margin-left:10px;"> 
+  
+           
+               <h6>Upload Verfier Contract</h6>
+               <br>
+                <input type="file" name="document" id="document" >
+          
+               
+          
+            
+            <input type="submit" value="Deploy Verifer Contract" class="loginbutton" id="deployVerifierContract" style="margin-top:20px;">
+            </form>
+
+       
+
+       
+      </div>
+      
+      <!-- Modal footer -->
+    
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="registerItemModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Register Auction Item</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form style="margin-left:10px;"> 
+    
+             
+                
+                 <br>
+                  <input type="text" name="itemName" id="itemName" placeholder="Enter Auction Item Name" style="width:100%;">
+            
+                 
+            
+              
+              <input type="button" value="Register Auction Item" class="loginbutton" id="registerNewitem" style="margin-top:20px;">
+              </form>
+  
+         
+  
+         
+        </div>
+        
+        <!-- Modal footer -->
+      
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Transaction Status</h4>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+          <p id="txId"></p>
+        </div>
+        
+        <!-- Modal footer -->
+      
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="modal fade" id="myModalNew">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Transaction Status</h4>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <p>Transaction Sucessfull with Txid:</p>
+          <p id="txIdNew"></p>
+        </div>
+        
+        <!-- Modal footer -->
+      
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="modal fade" id="pendingModal">
+    <div class="modal-dialog modal-dialog-centered modal modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Request has been submitted. Please wait while we process it.</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         
+          <br>
+  
+          <img src="assets/img/loading.gif" alt="Smiley face" height="120px" width="120px" style="margin-left:40%;"> 
+         
+        </div>
+        
+        <!-- Modal footer -->
+      
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<footer id="footer" style="margin-top: 150px;">
+    
+  <div id="footer-container">
+      <p id="footer-content">Developed by BlockChain COE |Mphasis Ltd.</p>
+  </div>
+</footer>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Properties.js"></script>
+	<script>
+var ipAdd=ipAddress();
+var port=portNo();
+
+    $("#deploy").click(function(){
+      $("#deployContract").modal();
+      
+
+    });
+
+
+    $("#registerItem").click(function(){
+      $("#registerItemModal").modal();
+      
+
+    });
+
+    $("form#data").submit(function(e) {
+    e.preventDefault();    
+    
+    $("#deployContract").hide();
+    $("#pendingModal").modal();
+    var formData = new FormData(this);
+
+    $.ajax({
+        url: "http://"+ipAdd+":"+port+"/deployVerifierContract",
+        type: 'POST',
+        data: formData,
+        success: function (data) {
+          //  alert(JSON.stringify(data));
+          $("#pendingModal").hide();
+          document.getElementById("txId").innerHTML = data.message;
+           $("#myModal").modal();
+           setTimeout(function(){ 
+             
+             window.location.href="adminDashboard.html";
+      
+          }, 1000);
+        },
+        cache: false,
+        contentType: false,
+        processData: false
+    });
+});
+</script>
+<script src="assets/js/Properties.js"></script>
+<script>
+
+
+
+$("#registerNewitem").click(function(){
+  var ipAdd=ipAddress();
+var port=portNo();
+
+  var itemName=$("#itemName").val();
+  //alert(itemName);
+  console.log(itemName);
+
+  $("#registerItemModal").hide();
+ $("#pendingModal").modal();
+$.ajax({
+	
+  dataType:"json",
+  contentType: 'application/json; charset=UTF-8',
+  url: "http://"+ipAdd+":"+port+"/registerAuctionItem?auctionItemName="+itemName, //replace api
+  type:'POST',
+  global:false,
+  async:false, 
+  success: function(resultval){
+//alert(JSON.stringify(resultval));
+
+     
+          document.getElementById("txIdNew").innerHTML = resultval.txId;
+          //localStorage.setItem("transactionId",1);
+          $("#pendingModal").hide();
+          $("#myModalNew").modal();
+       setTimeout(function(){ 
+      
+          window.location.href="adminDashboard.html";
+    
+       }, 1000);
+        
+       
+     
+}
+});
+
+});
+
+    </script>
+</body>
+
+</html>

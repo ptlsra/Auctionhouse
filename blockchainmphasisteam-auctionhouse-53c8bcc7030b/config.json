@@ -1,0 +1,11 @@
+{
+    "logLevel":"debug",
+    "appIp":"0.0.0.0",
+    "appPort":"5500",
+    "mongodb_ip":"127.0.0.1",
+    "mongodb_port":"27017",
+    "web3Url":"http://localhost:22002",
+    "bin_dir":"bin/",
+    "contracts_dir":"contracts/"
+}
+
