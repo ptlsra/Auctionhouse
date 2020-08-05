@@ -18,7 +18,7 @@
     "bignumber.js": "^7.2.1",
     "cors": "^2.8.4",
     "express": "^4.16.4",
-    "express-fileupload": "^1.0.0",
+    "express-fileupload": "^1.1.9",
     "fs": "0.0.1-security",
     "log4js": "^3.0.6",
     "mongodb": "^2.2.19",
